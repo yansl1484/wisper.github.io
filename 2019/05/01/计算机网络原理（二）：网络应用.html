@@ -364,16 +364,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/wisper.github.io/2019/05/01/计算机网络原理（二）：网络应用.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/05/01/计算机网络原理（二）：网络应用.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -530,15 +520,7 @@
           
 
   
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
-    </div>
-
+	<div id="gitalk-container"></div>
   
 
 
@@ -816,26 +798,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://wisper.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'https://yansl1484.github.io/wisper.github.io/2019/05/01/计算机网络原理（二）：网络应用.html';
-          this.page.identifier = '2019/05/01/计算机网络原理（二）：网络应用.html';
-          this.page.title = '计算机网络原理（二）：网络应用';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://wisper.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -851,6 +813,7 @@
 
 
 
+  
 
 
 
@@ -859,6 +822,24 @@
 
 
 
+
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: 'edcb5e4f05eb36936190',
+          clientSecret: 'b46a9a0eecab24da03af511b5a8c43b33c098404',
+          repo: 'hexo_comment',
+          owner: 'yansl1484',
+          admin: ['yansl1484'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
   
 
